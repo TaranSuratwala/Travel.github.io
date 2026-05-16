@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Automation University Waitlist</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+  <link href='https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@300;400;500;600&display=swap' rel='stylesheet' />
+  <link rel='stylesheet' href='styles.css' />
+</head>
+<body>
+  <div class='bg'>
+    <span class='glow glow-one'></span>
+    <span class='glow glow-two'></span>
+    <span class='grid'></span>
+  </div>
+
+  <header class='topbar'>
+    <div class='logo'>Automation University</div>
+    <nav class='nav'>
+      <a href='#learn'>Curriculum</a>
+      <a href='#benefits'>Benefits</a>
+      <a href='#waitlist'>Waitlist</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class='hero'>
+      <div class='hero-copy'>
+        <p class='eyebrow'>Launching soon</p>
+        <h1>Automate your network marketing business.</h1>
+        <p class='lead'>
+          Work smarter, recruit faster, and build a business that keeps running while you live life.
+        </p>
+        <form class='waitlist' id='waitlist'>
+          <input type='email' name='email' placeholder='Enter your email' required />
+          <button type='submit'>Join the waitlist</button>
+        </form>
+        <p class='fine-print'>We only send launch updates and key class announcements.</p>
+        <div class='notice' id='notice'></div>
+      </div>
+      <div class='hero-panel'>
+        <div class='panel-card'>
+          <p class='panel-label'>Automation systems</p>
+          <p class='panel-value'>Recruiting and onboarding flows</p>
+          <p class='panel-note'>Plug-and-play steps you can copy today.</p>
+        </div>
+        <div class='panel-card highlight'>
+          <p class='panel-label'>Leadership labs</p>
+          <p class='panel-value'>Scale teams with clarity</p>
+          <p class='panel-note'>Duplicate success with repeatable scripts.</p>
+        </div>
+        <div class='panel-card'>
+          <p class='panel-label'>Replay vault</p>
+          <p class='panel-value'>Bootcamp recordings</p>
+          <p class='panel-note'>Catch up anytime with on-demand videos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id='learn' class='section'>
+      <div class='section-head'>
+        <h2>What you will learn</h2>
+        <p>Step-by-step systems to build momentum quickly.</p>
+      </div>
+      <div class='card-grid'>
+        <article class='card'>
+          <h3>Recruiting automation</h3>
+          <p>Build funnels, follow-ups, and touchpoints that scale.</p>
+        </article>
+        <article class='card'>
+          <h3>Onboarding playbooks</h3>
+          <p>Turn new signups into confident team members.</p>
+        </article>
+        <article class='card'>
+          <h3>Duplication systems</h3>
+          <p>Teach once and replicate across your organization.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id='benefits' class='section'>
+      <div class='section-head'>
+        <h2>What you get</h2>
+        <p>Everything included when you join the waitlist.</p>
+      </div>
+      <div class='card-grid'>
+        <article class='card'>
+          <h3>Coaching calls and replays</h3>
+          <p>Learn directly with live sessions and recordings.</p>
+        </article>
+        <article class='card'>
+          <h3>Templates and swipe files</h3>
+          <p>Start with proven scripts and automation templates.</p>
+        </article>
+        <article class='card'>
+          <h3>Automation labs</h3>
+          <p>Work through funnels, follow-ups, and onboarding steps.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id='waitlist' class='section split'>
+      <div>
+        <h2>Join the waitlist</h2>
+        <p>Be the first to hear about the launch and early offers.</p>
+      </div>
+      <div class='cta-panel'>
+        <h3>Get launch updates</h3>
+        <p>Secure your spot for Automation University.</p>
+        <a class='btn primary' href='#waitlist'>Notify me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class='footer'>
+    <p>Automation University - designed for modern network marketing leaders.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('waitlist');
+    const notice = document.getElementById('notice');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const email = form.querySelector('input').value.trim();
+      if (!email) {
+        notice.textContent = 'Please enter a valid email address.';
+        notice.classList.add('show');
+        return;
+      }
+      notice.textContent = 'Thanks for joining the waitlist. We will be in touch soon.';
+      notice.classList.add('show');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
