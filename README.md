@@ -1,4 +1,24 @@
 # Travel.github.io
+
+Landing page copy and markup for the "Automation University" waitlist.
+
+## Highlights
+
+- Single-page hero with CTA
+- Feature list and value proposition
+- Static HTML/CSS with Google Fonts
+
+## How to Use
+
+1. Copy the HTML below into `index.html`.
+2. Open `index.html` in a browser.
+
+## Landing Page HTML
+
+<details>
+<summary>View the full HTML</summary>
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,23 +95,23 @@
     <img src="https://a.mailmunch.co/attachments/assets/000/842/897/large/Travel_queen_intro_slide_png?1756776653" alt="Intro Slide">
   </div>
 
-  <p>I’ve been asked nonstop to create this and it’s finally happening.</p>
-  <p>Inside <strong>Travel Queen’s Automate In Network Marketing University</strong>, I’ll share the exact systems I used to build a multi-six-figure network marketing business, retire my husband early, homeschool my kids, and grow a team of thousands—all with <strong>automation that duplicates</strong>.</p>
+  <p>I have been asked nonstop to create this and it is finally happening.</p>
+  <p>Inside <strong>Travel Queen's Automate In Network Marketing University</strong>, I will share the exact systems I used to build a multi-six-figure network marketing business, retire my husband early, homeschool my kids, and grow a team of thousands with <strong>automation that duplicates</strong>.</p>
 
-  <h2>You'll Learn How To:</h2>
+  <h2>You will learn how to:</h2>
   <ul>
-    <li>Automate your recruiting & onboarding</li>
+    <li>Automate your recruiting and onboarding</li>
     <li>Duplicate success across your team</li>
     <li>Build a business that runs while you live life</li>
   </ul>
 
-  <h2>What You Get:</h2>
+  <h2>What you get:</h2>
   <ul>
-    <li><strong>Coaching Calls & Replays</strong> – learn directly from me + guest leaders</li>
-    <li><strong>Done-for-You Templates & Swipe Files</strong> – plug-and-play systems</li>
-    <li><strong>Bootcamp Replay Vault</strong> – 4+ hour automation bootcamp recordings</li>
-    <li><strong>Step-by-Step Automation Labs</strong> – funnels, follow-ups, onboarding</li>
-    <li><strong>Leadership Labs</strong> – scale and duplicate across teams</li>
+    <li><strong>Coaching Calls and Replays</strong> - learn directly from me and guest leaders</li>
+    <li><strong>Done-for-You Templates and Swipe Files</strong> - plug-and-play systems</li>
+    <li><strong>Bootcamp Replay Vault</strong> - 4+ hour automation bootcamp recordings</li>
+    <li><strong>Step-by-Step Automation Labs</strong> - funnels, follow-ups, onboarding</li>
+    <li><strong>Leadership Labs</strong> - scale and duplicate across teams</li>
   </ul>
 
   <div class="image">
@@ -99,11 +119,14 @@
   </div>
 
   <div class="cta">
-    <h2>Join the Waitlist</h2>
+    <h2>Join the waitlist</h2>
     <input type="email" placeholder="Enter your email" />
-    <button onclick="alert('Thanks for joining the waitlist!')">Notify Me First</button>
+    <button onclick="alert('Thanks for joining the waitlist!')">Notify me first</button>
   </div>
 </div>
 
 </body>
 </html>
+```
+
+</details>
